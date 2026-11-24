@@ -1,12 +1,13 @@
 :root {
     --color-background: #1b1923;
-    --color-surface: #302c3e;
-    --color-text: #eceaf1;
+    --color-surface: #373540;
+    --color-text: #e5e4e7fc;
     --color-border: #a7a7a7;
     --color-mute: #bcc0bc;
 
     --color-link: #a36fc9;
     --color-link-hover: #b791d6;
+    --color-highlight: #b0a8b31b;
 }
 
 @font-face {
@@ -20,16 +21,30 @@
 }
 
 html, body {
-    height: 100vh;
+    min-height: 100vh;
     letter-spacing: 1px;
     margin: 0;
 }
 
 body {
-    background: var(--color-background);
-    color: var(--color-text);
+    background: var(--color-background) fixed;
+    background-image:
+        radial-gradient(
+            ellipse 80% 50% at 50% -10%,
+            #4b87e738,
+            transparent
+        ),
+        radial-gradient(
+            ellipse 60% 60% at 50% 80%,
+            rgba(129, 56, 166, 0.22),
+            transparent
+        );
 
+    color: var(--color-text);
     font-family: 'open sans', 'Times New Roman', Times, serif;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .monospace {
@@ -59,8 +74,8 @@ footer {
     align-items: center;
     font-size: 0.9rem;
 
-    background-color: var(--color-surface);
     color: var(--color-mute);
+    border-top: solid 1px var(--color-border);
 }
 
 footer p {
@@ -71,7 +86,6 @@ footer .right {
     text-align: right;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
+*::selection {
+    background-color: var(--color-highlight);
 }
