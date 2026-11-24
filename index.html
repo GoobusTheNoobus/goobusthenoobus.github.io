@@ -72,8 +72,10 @@
         <script type="module" src="./src/main.ts"></script>
         <style>
             main {
-                display: flex;
-                flex-wrap: wrap;
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                gap: 2rem;
+                align-items: start;
 
                 width: 80vw;
                 margin: 6rem auto 5rem;
@@ -103,7 +105,8 @@
             }
 
             .posts {
-                min-width: 20rem;
+                padding-bottom: 4rem;
+                min-height: 20rem;
             }
 
         </style>
