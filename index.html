@@ -3,6 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>goobusthenoobus</title>
         <link rel="stylesheet" href="./src/style.css">
     </head>
@@ -11,8 +12,9 @@
             <div class="content">
                 <div class="center">
                     <p>
-                        <a href="/">Projects</a> · 
+                        <a href="/projects/">Projects</a> · 
                         <a href="/">Posts</a> · 
+                        <a href="/">This site</a> · 
                         <a href="https://github.com/GoobusTheNoobus/goobusthenoobus.github.io">Repo ↗</a>
                     </p>
                     <h1 class="title monospace">Goobus</h1>
@@ -21,7 +23,8 @@
                 <h1>Hello! :D</h1>
                 <p>
                     I'm David, and I am a hobbyist programmer, amateur chess engine developer, and YSWS 
-                    reviewer who likes building random stuff.
+                    reviewer who likes building random stuff. I love minimalism (yum) and keep my code 
+                    simple and readable.
                 </p>
                 <h1>About me</h1>
                 <ul>
@@ -76,6 +79,7 @@
                 grid-template-columns: 2fr 1fr;
                 gap: 2rem;
                 max-width: 90rem;
+                padding: 0 2rem;
 
                 margin: 6rem auto 5rem;
             }
@@ -87,6 +91,18 @@
                 border: var(--color-border) 1px solid;
                 border-radius: 10px;
                 max-width: 50rem;
+            }
+
+            @media (max-width: 900px) {
+                main {
+                    grid-template-columns: minmax(0, 1fr);
+                    padding: 0 1rem;
+                    margin-top: 2rem;
+                }
+
+                .content, .posts {
+                    max-width: none;
+                }
             }
             
             .center {
