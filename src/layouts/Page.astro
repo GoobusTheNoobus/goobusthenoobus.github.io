@@ -1,0 +1,42 @@
+---
+import Footer from "../components/Footer.astro";
+
+interface Props {
+    title: string 
+}
+
+const { title } = Astro.props;
+
+---
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{title} - goobusthenoobus</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <main>
+            <slot />
+        </main>
+		<Footer />
+        <style>
+            main {
+                display: flex;
+                flex-direction: column;
+                max-width: 90rem;
+                padding: 0 2rem;
+                margin: 6rem auto 5rem;
+
+                background-color: #9090900a;
+                padding: 2rem 3rem;
+                border: var(--color-border) 1px solid;
+                border-radius: 10px;
+                max-width: 70rem;
+            }
+        </style>
+    </body>
+</html>

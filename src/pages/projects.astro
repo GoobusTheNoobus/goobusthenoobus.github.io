@@ -1,144 +1,117 @@
 ---
-import Footer from "../components/Footer.astro";
+import Page from "../layouts/Page.astro";
 ---
 
-<!DOCTYPE html>
+<Page title="My Projects">
+    <h1>
+        My Projects
+    </h1>
+    <p class="description">
+        Goobus - Making random things since 2026.
+    </p>
 
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>goobusthenoobus</title>
-        <link rel="stylesheet" href="../style.css">
-    </head>
-    <body>
-        <main>
-            <h1>
-                My Projects
-            </h1>
-            <p class="description">
-                Goobus - Making random things since 2026.
+    <div class="project">
+        <div class="project-info">
+            <h2>Personal Site</h2>
+            <p>
+                This website - built to share my projects, practice webpage design, and perhaps 
+                occasionally posting blogs. You are looking at it right now. It is heavily 
+                work-in-progress, and expect things to break. 
             </p>
+        </div>
+        <div class="links">
+            <a href="https://github.com/GoobusTheNoobus/goobusthenoobus.github.io">Repo↗</a> · {" "}
+            <a href="/">Check it out (ur looking at it rn)</a>
+        </div>
+    </div>
 
-            <div class="project">
-                <div class="project-info">
-                    <h2>Personal Site</h2>
-                    <p>
-                        This website - built to share my projects, practice webpage design, and perhaps 
-                        occasionally posting blogs. You are looking at it right now. It is heavily 
-                        work-in-progress, and expect things to break. 
-                    </p>
-                </div>
-                <div class="links">
-                    <a href="https://github.com/GoobusTheNoobus/goobusthenoobus.github.io">Repo↗</a> · {" "}
-                    <a href="/">Check it out (ur looking at it rn)</a>
-                </div>
-            </div>
+    <div class="project">
+        <div class="project-info">
+            <h2>GoobLang</h2>
+            <p>
+                A programming language that is suited to my taste. Heavily work in progress - 
+                development is paused right now since I am a bit busy with other projects. It
+                has a tree-walking interpreter right now, but will support JIT compilation in 
+                the near future.
+            </p>
+        </div>
+        <div class="links">
+            <a href="https://github.com/GoobusTheNoobus/GoobLang">Repo↗</a> 
+        </div>
+    </div>
 
-            <div class="project">
-                <div class="project-info">
-                    <h2>GoobLang</h2>
-                    <p>
-                        A programming language that is suited to my taste. Heavily work in progress - 
-                        development is paused right now since I am a bit busy with other projects. It
-                        has a tree-walking interpreter right now, but will support JIT compilation in 
-                        the near future.
-                    </p>
-                </div>
-                <div class="links">
-                    <a href="https://github.com/GoobusTheNoobus/GoobLang">Repo↗</a> 
-                </div>
-            </div>
+    <div class="project">
+        <div class="project-info">
+            <h2>Cubeeb</h2>
+            <p>
+                A UCI chess engine written in C++20: uses bitboards + mailbox as board representation,
+                negamax alpha-beta principle variation search framework, and applies various pruning
+                techniques. Also heavily WIP. 
+            </p>
+        </div>
+        <div class="links">
+            <a href="https://github.com/GoobusTheNoobus/Cubeeb">Repo↗</a>
+        </div>
+    </div>
 
-            <div class="project">
-                <div class="project-info">
-                    <h2>Cubeeb</h2>
-                    <p>
-                        A UCI chess engine written in C++20: uses bitboards + mailbox as board representation,
-                        negamax alpha-beta principle variation search framework, and applies various pruning
-                        techniques. Also heavily WIP. 
-                    </p>
-                </div>
-                <div class="links">
-                    <a href="https://github.com/GoobusTheNoobus/Cubeeb">Repo↗</a>
-                </div>
-            </div>
+    <div class="project">
+        <div class="project-info">
+            <h2>Waypoint</h2>
+            <p>
+                A tool that stores any file into a pseudo-random GPX track, and can safely retrieve
+                the file back into its original, preserving file name and extension. Shipped to 
+                the <a href="https://crescent.hackclub.com/">Crescent YSWS Program↗</a>.
+            </p>
+        </div>
+        <div class="links">
+            <a href="https://github.com/GoobusTheNoobus/Waypoint">Repo↗</a> · {" "}
+            <a href="https://goobusthenoobus.github.io/Waypoint">Check it out↗</a>
+        </div>
+    </div>
 
-            <div class="project">
-                <div class="project-info">
-                    <h2>Waypoint</h2>
-                    <p>
-                        A tool that stores any file into a pseudo-random GPX track, and can safely retrieve
-                        the file back into its original, preserving file name and extension. Shipped to 
-                        the <a href="https://crescent.hackclub.com/">Crescent YSWS Program↗</a>.
-                    </p>
-                </div>
-                <div class="links">
-                    <a href="https://github.com/GoobusTheNoobus/Waypoint">Repo↗</a> · {" "}
-                    <a href="https://goobusthenoobus.github.io/Waypoint">Check it out↗</a>
-                </div>
-            </div>
+    <div class="project">
+        <div class="project-info">
+            <h2>How to start coding</h2>
+            <p>
+                A really bad site made in ~1 hour for a very brief guide on how to start
+                coding. It is not a good representation of my coding skills and does not 
+                contain much effort. Shipped to the {" "}
+                <a href="https://boba.hackclub.com/">Boba YSWS Workshop↗</a>
+            </p>
+        </div>
+        <div class="links">
+            <a href="https://github.com/GoobusTheNoobus/BobaWorkshop">Repo↗</a> · {" "}
+            <a href="https://goobusthenoobus.github.io/BobaWorkshop">Check it out↗</a>
+        </div>
+    </div>
+</Page>
 
-            <div class="project">
-                <div class="project-info">
-                    <h2>How to start coding</h2>
-                    <p>
-                        A really bad site made in ~1 hour for a very brief guide on how to start
-                        coding. It is not a good representation of my coding skills and does not 
-                        contain much effort. Shipped to the {" "}
-                        <a href="https://boba.hackclub.com/">Boba YSWS Workshop↗</a>
-                    </p>
-                </div>
-                <div class="links">
-                    <a href="https://github.com/GoobusTheNoobus/BobaWorkshop">Repo↗</a> · {" "}
-                    <a href="https://goobusthenoobus.github.io/BobaWorkshop">Check it out↗</a>
-                </div>
-            </div>
-        </main>
+<style>
 
-        <Footer></Footer>
-        <style>
-            main {
-                display: flex;
-                flex-direction: column;
-                max-width: 90rem;
-                padding: 0 2rem;
-                margin: 6rem auto 5rem;
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
 
-                background-color: #9090900a;
-                padding: 2rem 3rem;
-                border: var(--color-border) 1px solid;
-                border-radius: 10px;
-                max-width: 70rem;
-            }
+    .description {
+        color: var(--color-mute);
+        font-style: italic;
+        text-align: center;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--color-mute);
+    }
 
-            h1 {
-                font-size: 4rem;
-                margin-bottom: 0.5rem;
-                text-align: center;
-            }
+    .project {
+        margin: 1rem;
+        padding: 1rem 3rem 2rem;
+        
+        border: var(--color-mute) 1px solid;
+        border-radius: 10px;
+    }
 
-            .description {
-                color: var(--color-mute);
-                font-style: italic;
-                text-align: center;
-                padding-bottom: 2rem;
-                border-bottom: 1px solid var(--color-mute);
-            }
-
-            .project {
-                margin: 1rem;
-                padding: 1rem 3rem 2rem;
-                
-                border: var(--color-mute) 1px solid;
-                border-radius: 10px;
-            }
-
-            .project h2 {
-                font-size: 2rem;
-                margin-bottom: 8px;
-            }
-
-        </style>
-    </body>
-</html>
+    .project h2 {
+        font-size: 2rem;
+        margin-bottom: 8px;
+    }
+</style>
