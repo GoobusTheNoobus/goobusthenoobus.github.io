@@ -1,0 +1,76 @@
+---
+import Page from "../layouts/Page.astro";
+---
+
+<Page title="Blogs">
+    <h1>
+        Blogs
+    </h1>
+    <p class="description">
+        Articles, rants, and shitposts - free of AI slop
+    </p>
+
+    <div class="post">
+        <div class="post-info">
+            <h2>My thoughts on AI</h2>
+            <p class="date">Posted on 2026-11-25</p>
+            <p>
+                In the past couple of years, AI went from "there are 2 Rs in 'strawberry'"
+                to becoming a tool that most programmers frequently use to debug or write
+                code. It is no doubt that such a change is a substantial one, and that it
+                happened in a few short years, during which, lots of people developed
+                reliance on their AI models, unable to write a simple for loop on their own 
+                anymore.
+            </p>
+        </div>
+        <div class="links">
+            <a href="/blogs/my-thoughts-on-ai">Read more↗</a>
+        </div>
+    </div>
+
+    <div class="post">
+        <div class="post-info">
+            <h2>Chess, and programming</h2>
+            <p class="date">Posted on 2026-11-25</p>
+            <p>
+                Elon Musk recently had a funny encounter with chess.com, when he proposed the 
+                possiblity that chess could one day be solved. This take, IMO, shows ignorance 
+                on the subject on his part, and in this article, I will try to discuss chess,
+                its relevance in programming, and why I think although computers can pretend
+                to play chess perfectly, it willl never be fully solved.
+            </p>
+        </div>
+        <div class="links">
+            <a href="/blogs/">Read more↗</a>
+        </div>
+    </div>
+
+</Page>
+
+<style>
+
+    .description {
+        color: var(--color-mute);
+        font-style: italic;
+        text-align: center;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--color-mute);
+    }
+
+    .post {
+        margin: 1rem;
+        padding: 1rem 3rem 2rem;
+        
+        border: var(--color-mute) 1px solid;
+        border-radius: 10px;
+    }
+
+    .post h2 {
+        margin-bottom: 8px;
+    }
+
+    .date {
+        font-style: italic;
+        color: var(--color-mute);
+    }
+</style>
