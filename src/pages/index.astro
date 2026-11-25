@@ -1,3 +1,7 @@
+---
+import Footer from "../components/Footer.astro";
+---
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -5,16 +9,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>goobusthenoobus</title>
-        <link rel="stylesheet" href="./src/style.css">
+        <link rel="stylesheet" href="../style.css">
     </head>
     <body>
         <main>
             <div class="content">
                 <div class="center">
                     <p>
-                        <a href="/projects/">Projects</a> · 
-                        <a href="/">Posts</a> · 
-                        <a href="/">This site</a> · 
+                        <a href="/projects/">Projects</a> · {" "}
+                        <a href="/">Posts</a> · {" "}
+                        <a href="/">This site</a> · {" "}
                         <a href="https://github.com/GoobusTheNoobus/goobusthenoobus.github.io">Repo ↗</a>
                     </p>
                     <h1 class="title monospace">Goobus</h1>
@@ -58,21 +62,7 @@
                 <i>Nothing here to see!</i>
             </div>
         </main>
-
-        <footer class="footer">
-            <div class="left">
-                <p>Copyright © 2026 <a href="https://github.com/GoobusTheNoobus">David Huang ↗</a>.</p>
-                <p>All rights reserved.</p>
-            </div>
-            <div class="right">
-                <p>
-                    <i>"An idiot admires complexity, a genius admires simplicity."</i> - Terry A. Davis
-                </p>
-                <strong>
-                    Made with minimalism, made without AI slop.
-                </strong>
-            </div>
-        </footer>
+		<Footer></Footer>
         <style>
             main {
                 display: grid;

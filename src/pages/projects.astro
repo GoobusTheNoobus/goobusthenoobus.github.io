@@ -1,3 +1,7 @@
+---
+import Footer from "../components/Footer.astro";
+---
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -5,7 +9,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>goobusthenoobus</title>
-        <link rel="stylesheet" href="../src/style.css">
+        <link rel="stylesheet" href="../style.css">
     </head>
     <body>
         <main>
@@ -26,7 +30,7 @@
                     </p>
                 </div>
                 <div class="links">
-                    <a href="https://github.com/GoobusTheNoobus/goobusthenoobus.github.io">Repo ↗</a> · 
+                    <a href="https://github.com/GoobusTheNoobus/goobusthenoobus.github.io">Repo ↗</a> · {" "}
                     <a href="/">Check it out (ur looking at it rn)</a>
                 </div>
             </div>
@@ -70,7 +74,7 @@
                     </p>
                 </div>
                 <div class="links">
-                    <a href="https://github.com/GoobusTheNoobus/Waypoint">Repo ↗</a> · 
+                    <a href="https://github.com/GoobusTheNoobus/Waypoint">Repo ↗</a> · {" "}
                     <a href="https://goobusthenoobus.github.io/Waypoint">Check it out ↗</a>
                 </div>
             </div>
@@ -86,26 +90,13 @@
                     </p>
                 </div>
                 <div class="links">
-                    <a href="https://github.com/GoobusTheNoobus/BobaWorkshop">Repo ↗</a> · 
+                    <a href="https://github.com/GoobusTheNoobus/BobaWorkshop">Repo ↗</a> · {" "}
                     <a href="https://goobusthenoobus.github.io/BobaWorkshop">Check it out ↗</a>
                 </div>
             </div>
         </main>
 
-        <footer class="footer">
-            <div class="left">
-                <p>Copyright © 2026 <a href="https://github.com/GoobusTheNoobus">David Huang ↗</a>.</p>
-                <p>All rights reserved.</p>
-            </div>
-            <div class="right">
-                <p>
-                    <i>"An idiot admires complexity, a genius admires simplicity."</i> - Terry A. Davis
-                </p>
-                <strong>
-                    Made with minimalism, made without AI slop.
-                </strong>
-            </div>
-        </footer>
+        <Footer></Footer>
         <style>
             main {
                 display: flex;

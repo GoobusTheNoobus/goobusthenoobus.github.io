@@ -12,12 +12,12 @@
 
 @font-face {
     font-family: 'roboto mono';
-    src: url('/RobotoMono-VariableFont_wght.ttf');
+    src: url('/fonts/RobotoMono-VariableFont_wght.ttf');
 }
 
 @font-face {
     font-family: 'open sans';
-    src: url('/OpenSans-VariableFont_wdth\,wght.ttf');
+    src: url('/fonts/OpenSans-VariableFont_wdth,wght.ttf');
 }
 
 html, body {
@@ -71,30 +71,6 @@ h1 {
 *::after {
     box-sizing: border-box;
 }
-
-footer {
-    margin: auto 0 0;
-    padding: 1rem 2rem;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    align-items: center;
-    font-size: 0.9rem;
-
-    color: var(--color-mute);
-    border-top: solid 1px var(--color-border);
-}
-
-footer p {
-    line-height: 1rem;
-}
-
-footer .right {
-    text-align: right;
-}
-
 *::selection {
     background-color: var(--color-highlight);
 }
