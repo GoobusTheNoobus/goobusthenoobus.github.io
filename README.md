@@ -6,7 +6,7 @@ This is my personal blog site, where I will post articles, rants, and other rand
 ## Why I made this
 
 <p>
-    I actually had a <a href="https://goobusthenoobus.github.io/PersonalSite">former site↗</a> {' '}
+    I actually had a <a href="https://goobusthenoobus.github.io/PersonalSite">former site↗</a>
     that I made at the beginning of Grade 9 - it was a bit messy and not nice to look at, though 
     I think some elements of it was cool, like the ASCII hero banner. However, my coding skills 
     grow very fast, especially as a beginner who codes like 67 hours a day. It no longer represented
