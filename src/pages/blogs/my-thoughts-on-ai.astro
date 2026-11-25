@@ -1,9 +1,11 @@
 ---
-import Page from "../../layouts/Page.astro";
+import Blog from "../../layouts/Blog.astro";
 ---
 
-<Page title="My thoughts on AI">
+<Blog title="My thoughts on AI">
     <h1>My thoughts on AI</h1>
+    <p class="date">Posted on 2026-11-25</p>
+
     <p>
         In the past couple of years, AI went from "there are 2 Rs in 'strawberry'"
         to becoming a tool that most programmers frequently use to debug or write
@@ -13,6 +15,22 @@ import Page from "../../layouts/Page.astro";
         anymore.
     </p>
     <p>
-        TODO: Finish article
+        I recently came across a Youtube channel named Hayyoth, and he embraced
+        extreme minimalism. He gained a shit ton of subscribers in like a month 
+        with a very simple setup. Blank grey desktop, a small Vim window open, 
+        and a window named Human with a man emoji that I can't remember from 
+        memory. He also had a very satisfying program that plays a crisp keyboard
+        press sound when a key is pressed. Its evident why people love him. 
     </p>
-</Page>
+
+    <p>
+        TODO: Finish
+    </p>
+</Blog>
+<style>
+    .date {
+        color: var(--color-mute);
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--color-mute);
+    }
+</style>
