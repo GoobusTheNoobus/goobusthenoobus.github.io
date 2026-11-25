@@ -64,6 +64,14 @@ a:hover {
 
 h1 {
     margin-top: 2rem;
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 *,
