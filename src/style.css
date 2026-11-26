@@ -7,8 +7,8 @@
 
     --color-primary: #5bc4c0;
 
-    --color-link: #6fa6c9;
-    --color-link-hover: #91b5d6;
+    --color-link: var(--color-primary);
+    --color-link-hover: #91c2d6;
     --color-highlight: #b0a8b31b;
 }
 

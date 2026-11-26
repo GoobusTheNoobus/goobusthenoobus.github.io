@@ -1,11 +1,13 @@
 ---
 import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 
 interface Props {
     title: string 
+    path: string
 }
 
-const { title } = Astro.props;
+const { title, path } = Astro.props;
 
 ---
 
@@ -19,11 +21,14 @@ const { title } = Astro.props;
         <link rel="stylesheet" href="../style.css">
     </head>
     <body>
+        
         <main>
+            <Header path={path}></Header>
             <slot />
         </main>
 		<Footer />
         <style>
+
             main {
                 display: flex;
                 flex-direction: column;
@@ -36,6 +41,7 @@ const { title } = Astro.props;
                 border: var(--color-border) 1px solid;
                 border-radius: 10px;
             }
+
         </style>
     </body>
 </html>

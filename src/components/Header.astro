@@ -1,0 +1,58 @@
+---
+
+interface Props {
+    path: string
+}
+
+const { path } = Astro.props;
+
+---
+
+<div class="header">
+    <p class="path">{ path }</p>
+    <button
+        class="terminal-button monospace"
+        type="button"
+        aria-label="Open terminal"
+    >
+        >_
+    </button>
+</div>
+
+<style>
+    .path {
+        font-size: 1.25rem;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+
+        border-bottom: 1px solid var(--color-mute);
+        color: var(--color-primary);
+        font-family: 'roboto mono', 'Courier New', Courier, monospace;
+        margin: 1rem 2rem 2rem;
+        align-items: center;
+        padding: 0rem 1rem;
+    }
+
+    .terminal-button {
+        width: 3rem;
+        height: 2rem;
+        
+        color: var(--color-primary);
+        font-weight: 900;
+
+        border-radius: 10px;
+        border: 1px solid var(--color-primary);
+        font-family: 'roboto mono', 'Courier New', Courier, monospace;
+
+        background-color: #00000000;
+        user-select: none;
+    }
+
+    .terminal-button:hover {
+        background-color: var(--color-primary);
+        color: var(--color-text);
+    }
+</style>
