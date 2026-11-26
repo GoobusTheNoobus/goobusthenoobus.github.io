@@ -6,9 +6,12 @@ import Page from "../layouts/Page.astro";
     <h1>
         Blogs
     </h1>
-    <p class="description">
-        Articles, rants, and shitposts - free of AI slop
-    </p>
+    <div class="description">
+        <p>
+            Articles, rants, and shitposts - free of AI slop. I express my opinions on various 
+            topics, both serious and unserious.
+        </p>
+    </div>
 
     <div class="post">
         <div class="post-info">
@@ -50,16 +53,24 @@ import Page from "../layouts/Page.astro";
 <style>
 
     h1 {
-        text-align: center;
+        margin-left: 3rem;
     }
 
     .description {
         color: var(--color-mute);
         font-style: italic;
-        text-align: center;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
         border-bottom: 1px solid var(--color-mute);
+        margin-left: 3rem;
+        margin-bottom: 1rem;
+        align-items: center;
     }
+
+    .description p {
+        max-width: 40rem;
+    }
+
+
 
     .post {
         margin: 1rem;

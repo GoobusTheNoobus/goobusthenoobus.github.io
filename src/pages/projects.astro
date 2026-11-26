@@ -6,17 +6,21 @@ import Page from "../layouts/Page.astro";
     <h1>
         My Projects
     </h1>
-    <p class="description">
-        Goobus - Making random things since 2026.
-    </p>
+    <div class="description">
+        <p>
+            Goobus - Making random things since 2026. This is a list of my projects, not counting 
+            the ones from like Grade 4 (those were peak times, though I lost them).
+        </p>
+    </div>
 
     <div class="project">
         <div class="project-info">
             <h2>Personal Site</h2>
+            <p class="languages">Astro · CSS · Typescript</p>
             <p>
-                This website - built to share my projects, practice webpage design, and perhaps 
-                occasionally posting blogs. You are looking at it right now. It is heavily 
-                work-in-progress, and expect things to break. 
+                My corner of the internet - built to share my projects, practice webpage 
+                design, and perhaps occasionally posting blogs. You are looking at it right
+                now. It is heavily work-in-progress, and expect things to break. 
             </p>
         </div>
         <div class="links">
@@ -28,6 +32,7 @@ import Page from "../layouts/Page.astro";
     <div class="project">
         <div class="project-info">
             <h2>GoobLang</h2>
+            <p class="languages">C++20</p>
             <p>
                 A programming language that is suited to my taste. Heavily work in progress - 
                 development is paused right now since I am a bit busy with other projects. It
@@ -43,6 +48,7 @@ import Page from "../layouts/Page.astro";
     <div class="project">
         <div class="project-info">
             <h2>Cubeeb</h2>
+            <p class="languages">C++20</p>
             <p>
                 A UCI chess engine written in C++20: uses bitboards + mailbox as board representation,
                 negamax alpha-beta principle variation search framework, and applies various pruning
@@ -57,6 +63,7 @@ import Page from "../layouts/Page.astro";
     <div class="project">
         <div class="project-info">
             <h2>Waypoint</h2>
+            <p class="languages">HTML · CSS · Typescript</p>
             <p>
                 A tool that stores any file into a pseudo-random GPX track, and can safely retrieve
                 the file back into its original, preserving file name and extension. Shipped to 
@@ -72,6 +79,7 @@ import Page from "../layouts/Page.astro";
     <div class="project">
         <div class="project-info">
             <h2>How to start coding</h2>
+            <p class="languages">HTML · CSS</p>
             <p>
                 A really bad site made in ~1 hour for a very brief guide on how to start
                 coding. It is not a good representation of my coding skills and does not 
@@ -89,15 +97,26 @@ import Page from "../layouts/Page.astro";
 <style>
 
     h1 {
-        text-align: center;
+        margin-left: 2rem;
     }
 
     .description {
         color: var(--color-mute);
         font-style: italic;
-        text-align: center;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
         border-bottom: 1px solid var(--color-mute);
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .description p {
+        max-width: 40rem;
+        margin-bottom: 0;
+    }
+
+    .languages {
+        font-size: 0.9rem;
+        color: var(--color-mute);
     }
 
     .project {
