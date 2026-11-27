@@ -1,0 +1,78 @@
+---
+
+interface Props {
+    path: string,
+    nav: string[]
+}
+
+export interface Link {
+    href: string,
+    text: string
+}
+
+const { path, nav } = Astro.props;
+
+---
+
+<header>
+    <div class="monospace">
+        <p class="prompt">
+            <span class="user">goobus</span>@<span class="host">site</span>:<span class="path">{path}</span>$
+            <span class="text"> ls</span>
+        </p>        
+        <nav class="">
+            {nav.map(element => (
+                <div><a href={element}>cd {element}</a></div>
+            ))}
+        </nav>
+    </div>
+    <div></div>
+</header>
+
+<style>
+    .hidden { display: none; }
+    
+    .prompt {
+        color: var(--color-mute);
+    }
+
+    .user {
+        color: var(--color-primary);
+        font-weight: 900;
+    }
+
+    .host {
+        color: var(--color-mute);
+    }
+
+    .path {
+        color: var(--color-mute);
+    }
+
+    .separator {
+        color: var(--color-mute);
+        font-weight: 900;
+    }
+
+    .text {
+        color: var(--color-text);
+    }
+
+    header {
+        font-size: 0.9rem
+    }
+
+    nav {
+        display: flex;
+        gap: 2rem;
+    }
+
+    nav div {
+        ;
+    }
+
+    a {
+        color: var(--color-text);
+    }
+
+</style>

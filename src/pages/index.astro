@@ -1,7 +1,7 @@
 ---
 import '../layouts/Page.astro'
 import HomePage from '../layouts/HomePage.astro';
-import Header from '../components/Header.astro';
+import Nav from '../components/Nav.astro';
 ---
 
 <!DOCTYPE html>
@@ -9,14 +9,10 @@ import Header from '../components/Header.astro';
 <HomePage title="Home" path='~/'>
     <main>
         <div class="content">
-            <Header path='~/'></Header>
+            <Nav path="/" nav={
+                ["/projects/", "/about/", "/blogs/"]
+            }></Nav>
             <div class="center">
-                <p>
-                    <a href="/projects/">Projects</a> · {" "}
-                    <a href="/blogs/">Blogs</a> · {" "}
-                    <a href="/about/">This site</a> · {" "}
-                    <a href="https://github.com/GoobusTheNoobus/goobusthenoobus.github.io">Repo↗</a>
-                </p>
                 <h1 class="title monospace">Goobus</h1>
                 <p>Always learning. Always coding. <strong>Always larping</strong></p>
             </div>
@@ -104,7 +100,7 @@ import Header from '../components/Header.astro';
     }
 
     .center h1 {
-        font-size: 5rem;
+        font-size: 6rem;
         letter-spacing: -0.2rem;
         margin-bottom: 0;
     }
